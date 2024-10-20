@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+   sign-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255,255,255,.9);
+    position:relative;
+    top:0; right:-105%;
+    z-index: 10000;
+    height:100%;
+    width:100%;
+}
+
+.sign-form.active{
+    right:0;
+}
+
+.sign-form form{
+    background:#fff;
+    border:var(--border);
+    width:40rem;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin:2rem;
+}
+
+.sign-form form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:var(--black);
+    text-align: center;
+}
+
+.sign-form form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.sign-form form .box{
+    width: 100%;
+    margin:.7rem 0;
+    font-size: 1.6rem;
+    border:var(--border);
+    border-radius: .5rem;
+    padding:1rem 1.2rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.sign-form form .checkbox{
+    display:flex;
+    align-items: center;
+    gap:.5rem;
+    padding:1rem 0;
+}
+
+.sign-form form .checkbox label{
+    font-size: 1.5rem;
+    color:var(--light-color);
+    cursor: pointer;
+}
+
+.sign-form form .btn{
+    text-align: center;
+    width:100%;
+    margin:1.5rem 0;
+}
+
+.sign-form form p{
+    padding-top: .8rem;
+    color:var(--light-color);
+    font-size: 1.5rem;
+}
+
+.sign-form form p a{
+    color:var(--green);
+    text-decoration: underline;
+}
+
+.sign-form #close-login-btn{
+    position: absolute;
+    top:1.5rem; right:2.5rem;
+    font-size: 5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255,255,255,.9);
+    position:relative;
+    top:0; right:-105%;
+    z-index: 10000;
+    height:100%;
+    width:100%;
+}
+
+.login-form.active{
+    right:0;
+}
+
+.login-form form{
+    background:#fff;
+    border:var(--border);
+    width:40rem;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin:2rem;
+}
+
+.login-form form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:var(--black);
+    text-align: center;
+}
+
+.login-form form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.login-form form .box{
+    width: 100%;
+    margin:.7rem 0;
+    font-size: 1.6rem;
+    border:var(--border);
+    border-radius: .5rem;
+    padding:1rem 1.2rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.login-form form .checkbox{
+    display:flex;
+    align-items: center;
+    gap:.5rem;
+    padding:1rem 0;
+}
+
+.login-form form .checkbox label{
+    font-size: 1.5rem;
+    color:var(--light-color);
+    cursor: pointer;
+}
+
+.login-form form .btn{
+    text-align: center;
+    width:100%;
+    margin:1.5rem 0;
+}
+
+.login-form form p{
+    padding-top: .8rem;
+    color:var(--light-color);
+    font-size: 1.5rem;
+}
+
+.login-form form p a{
+    color:var(--green);
+    text-decoration: underline;
+}
+
+.login-form #close-login-btn{
+    position: absolute;
+    top:1.5rem; right:2.5rem;
+    font-size: 5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+/*  */
+
+.forget-password-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255,255,255,.9);
+    position:relative;
+    top:0; right:-105%;
+    z-index: 10000;
+    height:100%;
+    width:100%;
+}
+.forget-password form{
+    background:#fff;
+    border:var(--border);
+    width:40rem;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin:2rem;
+}
+
+.forget-password form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color:var(--black);
+    text-align: center;
+}
+
+.forget-password form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.forget-password form .box{
+    width: 100%;
+    margin:.7rem 0;
+    font-size: 1.6rem;
+    border:var(--border);
+    border-radius: .5rem;
+    padding:1rem 1.2rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.forget-password form .checkbox{
+    display:flex;
+    align-items: center;
+    gap:.5rem;
+    padding:1rem 0;
+}
+
+.forget-password form .btn{
+    text-align: center;
+    width:100%;
+    margin:1.5rem 0;
+}
+
+.forget-password form p{
+    padding-top: .8rem;
+    color:var(--light-color);
+    font-size: 1.5rem;
+}
+
+.forget-password form p a{
+    color:var(--green);
+    text-decoration: underline;
+}
+.main{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+</style>
+  </head>
+  <body>
+    <div class="main">
+    <!-- Sign Up Form -->
+<div class="sign-form" id="sign-up-form" style="display:none">
+    <div id="close-sign-btn" class="fas fa-times"></div> 
+    <form action="">
+        <h3>Sign Up</h3>
+        <span>username</span>
+        <input type="text" name="username" class="box" placeholder="enter your username" required>
+        
+        <span>email</span>
+        <input type="email" name="email" class="box" placeholder="enter your email" required>
+        
+        <span>password</span>
+        <input type="password" name="password" class="box" placeholder="enter your password" required>
+        
+        <span>confirm password</span>
+        <input type="password" name="confirm-password" class="box" placeholder="confirm your password" required>
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me1" />
+            <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign up" class="btn" />
+        <p>
+            already have an account? 
+            <a href="#" id="toggle-to-login">log in</a>
+        </p>
+    </form>
+</div>
+
+<!-- Login Form -->
+<div class="login-form" id="login-form">
+    <div id="close-login-btn" class="fas fa-times"></div>
+    <form action="">
+        <h3>Login</h3>
+        <span>username</span>
+        <input type="email" class="box" placeholder="enter your email" id="loginmail" required />
+        <span>password</span>
+        <input type="password" class="box" placeholder="enter your password" id="pswd" required />
+        <div class="checkbox">
+            <input type="checkbox" id="remember-me2" />
+            <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" id="login"/>
+        <p>
+            forget password? 
+            <a href="#" id="toggle-to-forgot-password">click here</a>
+        </p>
+        <p>
+            don't have an account? <a href="#" id="toggle-to-sign">create one</a>
+        </p>
+    </form>
+</div>
+
+<!-- Forget Password Form -->
+<div class="forget-password" id="forget-password-form" style="display:none">
+    <div id="close-forget-password-btn" class="fas fa-times"></div>
+    <form id="forget-password-form">
+        <h3>Forgot Password</h3>
+        <span>email</span>
+        <input type="email" class="box" placeholder="enter your email" required>
+        <input type="submit" value="Reset Password" class="btn">
+        <p>remembered your password? <a href="#" id="toggle-to-login-from-forgot">log in</a></p>
+    </form>
+</div>
+</div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.getElementById("login-form");
+    const signUpForm = document.getElementById("sign-up-form");
+    const forgetPasswordForm = document.getElementById("forget-password-form");
+
+    // Function to show a specific form and hide others
+    function showForm(formToShow) {
+        loginForm.style.display = 'none';
+        signUpForm.style.display = 'none';
+        forgetPasswordForm.style.display = 'none';
+        formToShow.style.display = 'block';
+    }
+
+    // Initially show the login form
+    showForm(loginForm);
+
+    // Show sign up form
+    document.querySelector("#toggle-to-sign").onclick = (event) => {
+        event.preventDefault();
+        showForm(signUpForm);
+    };
+
+    // Show forget password form
+    document.querySelector("#toggle-to-forgot-password").onclick = (event) => {
+        event.preventDefault();
+        showForm(forgetPasswordForm);
+    };
+
+    // Show login form from sign up
+    document.querySelector("#toggle-to-login").onclick = (event) => {
+        event.preventDefault();
+        showForm(loginForm);
+     
+
+    };
+
+    document.querySelector("#toggle-to-login-from-forgot").onclick = (event) => {
+        event.preventDefault();
+        showForm(loginForm);
+    };
+
+    // Close buttons
+    document.querySelector("#close-login-btn").onclick = () => {
+        loginForm.style.display = 'none';
+    };
+
+    document.querySelector("#close-sign-btn").onclick = () => {
+        signUpForm.style.display = 'none';
+    };
+
+    document.querySelector("#close-forget-password-btn").onclick = () => {
+        forgetPasswordForm.style.display = 'none';
+    };
+    
+});
+document.getElementById("login").addEventListener("click",(e)=>{
+    e.preventDefault();
+   let email= document.getElementById("loginmail").value
+   let pswd= document.getElementById("pswd").value
+   if(email && pswd){
+        window.location.href="./index.html";
+   }
+})
+    </script> 
+  </body>
+</html>

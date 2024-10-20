@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart</title>
+    <style>
+        .cart-item {
+            margin-bottom: 20px;
+            border: 2px solid red;
+            padding: 10px;
+            width: 300px;
+        }
+        .cart-item img {
+            width: 150px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .cart-item div{
+            font-size: 20px;
+        }
+        .remove {
+            margin-left: auto;
+            cursor: pointer;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Cart</h1>
+    <div id="cart-items"></div>
+    <a href="./index.html">Continue Shopping</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+            const cartItemsContainer = document.getElementById("cart-items");
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+            } else {
+                cart.forEach((item, index) => {
+                    const itemElement = document.createElement("div");
+                    itemElement.classList.add("cart-item");
+                    itemElement.innerHTML = `
+                        <img src="${item.image}" alt="${item.title}">
+                        <div>${item.title} - $${item.price}</div>
+                        <button class="remove" data-index="${index}">Remove</button>
+                    `;
+                    cartItemsContainer.appendChild(itemElement);
+                }); 
+                
+                // Add event listeners for the remove buttons
+                const removeButtons = document.querySelectorAll('.remove');
+                removeButtons.forEach(button => {
+                    button.addEventListener('click', function () {
+                        const index = this.getAttribute('data-index');
+                        cart.splice(index, 1); 
+                        location.reload();
+                        sessionStorage.setItem("cart", JSON.stringify(cart)); 
+                        cartItemsContainer.removeChild(itemElement); 
+                        if (cart.length === 0) {
+                            cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
