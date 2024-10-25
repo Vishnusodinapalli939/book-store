@@ -22,129 +22,7 @@
       <div class="header-1">
         <a href="#" class="logo"> <i class="fas fa-book"></i> Bookstore </a>
 
-        <form action="" class="search-form">
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="Search for books..."
-          />
-          <label for="search-box" class="fas fa-search" id="sea"></label>
-        </form>
-        <div id="searchResults"></div>
-        <!-- search start -->
-        <div id="bookList" style="display: none">
-          <div
-            class="book"
-            data-title="applied physics"
-            data-price="15.99"
-            data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-3.png"
-          >
-            <h3>featured books3</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-          </div>
-          <div
-            class="book"
-            data-title="engineering drawing"
-            data-price="15.99"
-            data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-4.png"
-          >
-            <h3>featured books4</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-          </div>
-          <div
-            class="book"
-            data-title="database system"
-            data-price="15.99"
-            data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-8.png"
-          >
-            <h3>featured books8</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-          </div>
-          <div
-            class="book"
-            data-title="mobile communcation"
-            data-price="15.99"
-            data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-10.png"
-          >
-            <h3>featured books10</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-          </div>
-
-          <div
-            class="book"
-            data-title="mathematics-l"
-            data-price="15.99"
-            data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-1.png"
-          >
-            <h3>featured books1</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-          </div>
-          <div
-            class="book"
-            data-title="mechanics"
-            data-price="15.99"
-            data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-2.png"
-          >
-            <h3>featured books2</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-          </div>
-          <div
-            class="book"
-            data-title="mathematics-ll"
-            data-price="15.99"
-            data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-5.png"
-          >
-            <h3>featured books3</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-          </div>
-          <div
-            class="book"
-            data-title="featured books4"
-            data-price="15.99"
-            data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-4.png"
-          >
-            <h3>featured books4</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-          </div>
-          <div
-            class="book"
-            data-title="mobile communication"
-            data-price="15.99"
-            data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-10.png"
-          >
-            <h3>featured books5</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-          </div>
-          <div
-            class="book"
-            data-title="automata theory"
-            data-price="15.99"
-            data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-6.png"
-          >
-            <h3>featured books6</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-          </div>
-          <div
-            class="book"
-            data-title="software engineering"
-            data-price="15.99"
-            data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-7.png"
-          >
-            <h3>featured books7</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-          </div>
-          <div
-            class="book"
-            data-title="cryptography"
-            data-price="15.99"
-            data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-9.png"
-          >
-            <h3>featured books8</h3>
-            <div class="price">$15.99 <span>$20.99</span></div>
-          </div>
-        </div>
-        <!-- search end -->
-        <div class="icons">
+                <div class="icons">
           <a href="./cart.html" class="fas fa-shopping-cart"></a>
           <div id="login-btn" class="fas fa-user"></div>
         </div>
@@ -154,6 +32,7 @@
         <nav class="navbar">
           <a href="./index.html">home</a>
           <a href="#featured">featured</a>
+          <a href="#search">search</a>
           <a href="#arrivals">category</a>
           <a href="#reviews">reviews</a>
           <a href="#blogs">feedback</a>
@@ -254,6 +133,167 @@
     </section>
 
     <!-- icons section ends -->
+     <!-- search section -->
+     <section class="featured" id="featured">
+      <h1 class="heading"><span>Search</span></h1>
+     <form action="" class="search-form" id="search">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for books..."
+      />
+      <label for="search-box" class="fas fa-search" id="sea"></label>
+    </form>
+    <div id="searchResults"></div>
+    <!-- search start -->
+    <div id="bookList" style="display: none">
+      <div
+        class="book"
+        data-title="applied physics"
+        data-price="15.99"
+        data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-3.png"
+        data-author="Gianni Martire"
+        data-description="Applied Physics refers to the branch of physics that focuses on the practical application of scientific principles to develop new technologies and solve real-world problems."
+      >
+        <h3>featured books3</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div
+        class="book"
+        data-title="engineering drawing"
+        data-price="15.99"
+        data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-4.png"
+        data-author="Author 2"
+        data-description="Description for Engineering Drawing"
+      >
+        <h3>featured books4</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div
+        class="book"
+        data-title="database system"
+        data-price="15.99"
+        data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-8.png"
+        data-author="Henry F. Korth"
+        data-description="A database system is a collection of data, a database management system (DBMS), and associated applications. The DBMS is a software that allows users to store, retrieve, and edit data in a database"
+      >
+        <h3>Database System</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div
+        class="book"
+        data-title="mobile communcation"
+        data-price="15.99"
+        data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-10.png"
+        data-author="Author 2"
+        data-description="Mobile communication is the use of technology to communicate with others without cables, while away from a fixed location."
+      >
+        <h3>featured books10</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+
+      <div
+        class="book"
+        data-price="15.99"
+        data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-1.png"
+        data-title="statictics"
+        data-author="Karl Pearson."
+        data-description="Statistics is the study of the collection, analysis, interpretation, presentation, and organization of data. In other words, it is a mathematical discipline to collect, summarize data. Also, we can say that statistics is a branch of applied mathematics."
+
+      >
+        <h3>featured books1</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div
+        class="book"
+        data-price="15.99"
+        data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-2.png"
+        data-title="mechanics"
+        data-author=" Isaac Newton"
+      data-description="As a branch of classical physics, mechanics deals with bodies that are either at rest or are moving with velocities significantly less than the speed of light. It can also be defined as the physical science that deals with the motion of and forces on bodies not in the quantum realm."
+      >
+        <h3>featured books2</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div
+        class="book"
+        data-title="mathematics"
+        data-price="15.99"
+        data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-5.png"
+        data-author="Xenocrates"
+        data-description="Mathematics is a field of study that involves the use of numbers, quantities, and logical reasoning to describe and manipulate structure, space, and change"
+      >
+        <h3>Mathematics</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div
+        class="book"
+        data-title="featured books4"
+        data-price="15.99"
+        data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-4.png"
+        data-author="K Venugopal"
+        data-description="Engineering drawings, also known as mechanical drawings or manufacturing blueprints, are technical drawings that convey information about an object. They are used to specify the geometry, size, structure, tolerance, precision, and other requirements of a part. "
+      >
+        <h3>Engineering Drawing</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div
+        class="book"
+        data-title="mobile communication"
+        data-price="15.99"
+        data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-10.png"
+        data-author="Jochen H. Schiller"
+        data-description="Mobile communication is the use of technology to communicate with others without cables, while away from a fixed location."
+      >
+        <h3>Mobile Communcation</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div
+        class="book"
+        data-title="automata theory"
+        data-price="15.99"
+        data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-6.png"
+        data-author="M.Turing "
+        data-description="Automata theory is a branch of theoretical computer science that studies abstract machines, or automata, and the problems they can solve"
+      >
+        <h3>Automata Theory</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div
+        class="book"
+        data-title="software engineering"
+        data-price="15.99"
+        data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-7.png"
+        data-author="Sommerville, Ian"
+        data-description="Software engineering is a branch of computer science that involves the design, development, testing, and maintenance of software applications"
+      >
+        <h3>Software Engineering</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+      <div
+        class="book"
+        data-title="cryptography"
+        data-price="15.99"
+        data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-9.png"
+        data-author="Dr. William Stallings"
+        data-description="Cryptography is a cybersecurity practice that involves coding information to keep it secure and private. It is used to protect information from being read by unauthorized parties"
+      >
+        <h3>Cryptography</h3>
+        <div class="price">$15.99 <span>$20.99</span></div>
+      </div>
+    </div>
+    <div id="book-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-author"></p>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+    </section>
+    <!-- search end -->
+
+      <!-- search section ends -->
 
     <!-- featured section starts  -->
 
@@ -264,19 +304,21 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide box" id="box1">
             <div class="image">
-              <a href="./product.html">
                 <img
+                class="book-image"
                   src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-1.png"
                   alt=""
+                  data-title="statictics"
+                  data-author="Karl Pearson."
+                  data-description="Statistics is the study of the collection, analysis, interpretation, presentation, and organization of data. In other words, it is a mathematical discipline to collect, summarize data. Also, we can say that statistics is a branch of applied mathematics."
                 />
-              </a>
             </div>
             <div class="content" id="content">
-              <h3>featured books1</h3>
+              <h3>Mechanics</h3>
               <div class="price">$15.99 <span>$20.99</span></div>
               <button
                 class="btn add-to-cart"
-                data-title="featured books1"
+                data-title="statictics"
                 data-price="15.99"
                 data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-1.png"
               >
@@ -287,19 +329,22 @@
 
           <div class="swiper-slide box">
             <div class="image">
-              <a href="./product.html">
                 <img
+                class="book-image"
                   src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-2.png"
                   alt=""
+                  data-title="mechanics"
+                  data-author=" Isaac Newton"
+                data-description="As a branch of classical physics, mechanics deals with bodies that are either at rest or are moving with velocities significantly less than the speed of light. It can also be defined as the physical science that deals with the motion of and forces on bodies not in the quantum realm."
                 />
-              </a>
+              
             </div>
             <div class="content">
               <h3>featured books2</h3>
               <div class="price">$15.99 <span>$20.99</span></div>
               <button
                 class="btn add-to-cart"
-                data-title="featured books2"
+                data-title="mechanics"
                 data-price="15.99"
                 data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-2.png"
               >
@@ -310,19 +355,21 @@
 
           <div class="swiper-slide box">
             <div class="image">
-              <a href="product.html"
-                ><img
+              <img
+                class="book-image"
                   src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-3.png"
                   alt=""
+                  data-title="applied physics"
+                  data-author="Gianni Martire"
+                  data-description="Applied Physics refers to the branch of physics that focuses on the practical application of scientific principles to develop new technologies and solve real-world problems."
                 />
-              </a>
             </div>
             <div class="content">
-              <h3>featured books3</h3>
+              <h3>Applied Physics</h3>
               <div class="price">$15.99 <span>$20.99</span></div>
               <button
                 class="btn add-to-cart"
-                data-title="featured books3"
+                data-title="applied physics"
                 data-price="15.99"
                 data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-3.png"
               >
@@ -334,16 +381,20 @@
           <div class="swiper-slide box">
             <div class="image">
               <img
+              class="book-image"
                 src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-4.png"
                 alt=""
+                data-title="engineering drawing"
+                data-author="K Venugopal"
+                data-description="Engineering drawings, also known as mechanical drawings or manufacturing blueprints, are technical drawings that convey information about an object. They are used to specify the geometry, size, structure, tolerance, precision, and other requirements of a part. "
               />
             </div>
             <div class="content">
-              <h3>featured books4</h3>
+              <h3>Engieering Drawing</h3>
               <div class="price">$15.99 <span>$20.99</span></div>
               <button
                 class="btn add-to-cart"
-                data-title="featured books4"
+                data-title="engineering drawing"
                 data-price="15.99"
                 data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-4.png"
               >
@@ -355,16 +406,20 @@
           <div class="swiper-slide box">
             <div class="image">
               <img
+              class="book-image"
                 src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-5.png"
                 alt=""
+                data-title="Mathematics"
+                data-author="Xenocrates"
+                data-description="Mathematics is a field of study that involves the use of numbers, quantities, and logical reasoning to describe and manipulate structure, space, and change"
               />
             </div>
             <div class="content">
-              <h3>featured books5</h3>
+              <h3>Mathematics</h3>
               <div class="price">$15.99 <span>$20.99</span></div>
               <button
                 class="btn add-to-cart"
-                data-title="featured books5"
+                data-title="mathematics"
                 data-price="15.99"
                 data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-5.png"
               >
@@ -376,16 +431,20 @@
           <div class="swiper-slide box">
             <div class="image">
               <img
+              class="book-image"
                 src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-6.png"
                 alt=""
+                data-title="automata theory"
+                data-author="M.Turing "
+                data-description="Automata theory is a branch of theoretical computer science that studies abstract machines, or automata, and the problems they can solve"
               />
             </div>
             <div class="content">
-              <h3>featured books6</h3>
+              <h3>Automata Theory</h3>
               <div class="price">$15.99 <span>$20.99</span></div>
               <button
                 class="btn add-to-cart"
-                data-title="featured books6"
+                data-title="automata theory"
                 data-price="15.99"
                 data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-6.png"
               >
@@ -397,16 +456,20 @@
           <div class="swiper-slide box">
             <div class="image">
               <img
+              class="book-image"
                 src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-7.png"
                 alt=""
+                data-title="software engineering"
+                data-author="Sommerville, Ian"
+                data-description="Software engineering is a branch of computer science that involves the design, development, testing, and maintenance of software applications"
               />
             </div>
             <div class="content">
-              <h3>featured books7</h3>
+              <h3>Software Engineering</h3>
               <div class="price">$15.99 <span>$20.99</span></div>
               <button
                 class="btn add-to-cart"
-                data-title="featured books7"
+                data-title="software engineering"
                 data-price="15.99"
                 data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-7.png"
               >
@@ -418,16 +481,20 @@
           <div class="swiper-slide box">
             <div class="image">
               <img
+              class="book-image"
                 src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-8.png"
                 alt=""
+                data-title="database system"
+                data-author="Henry F. Korth"
+                data-description="A database system is a collection of data, a database management system (DBMS), and associated applications. The DBMS is a software that allows users to store, retrieve, and edit data in a database"
               />
             </div>
             <div class="content">
-              <h3>featured books8</h3>
+              <h3>Database System</h3>
               <div class="price">$15.99 <span>$20.99</span></div>
               <button
                 class="btn add-to-cart"
-                data-title="featured books8"
+                data-title="database system"
                 data-price="15.99"
                 data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-8.png"
               >
@@ -439,16 +506,20 @@
           <div class="swiper-slide box">
             <div class="image">
               <img
+              class="book-image"
                 src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-9.png"
                 alt=""
+                data-title="cryptography"
+                data-author="Dr. William Stallings"
+                data-description="Cryptography is a cybersecurity practice that involves coding information to keep it secure and private. It is used to protect information from being read by unauthorized parties"
               />
             </div>
             <div class="content">
-              <h3>featured books9</h3>
+              <h3>Cryptography</h3>
               <div class="price">$15.99 <span>$20.99</span></div>
               <button
                 class="btn add-to-cart"
-                data-title="featured books9"
+                data-title="cryptography"
                 data-price="15.99"
                 data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-9.png"
               >
@@ -460,16 +531,20 @@
           <div class="swiper-slide box">
             <div class="image">
               <img
+              class="book-image"
                 src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-10.png"
                 alt=""
+                data-title="mobile communication"
+                data-author="Jochen H. Schiller"
+                data-description="Mobile communication is the use of technology to communicate with others without cables, while away from a fixed location."
               />
             </div>
             <div class="content">
-              <h3>featured books10</h3>
+              <h3>Mobile Communcation</h3>
               <div class="price">$15.99 <span>$20.99</span></div>
               <button
                 class="btn add-to-cart"
-                data-title="featured books10"
+                data-title="mobile communication"
                 data-price="15.99"
                 data-image="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-10.png"
               >
@@ -482,7 +557,16 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
+      <div id="book-modal1" class="modal1">
+        <div class="modal-content1">
+            <span class="close1">&times;</span>
+            <h2 id="modal-title1"></h2>
+            <p id="modal-author1"></p>
+            <p id="modal-description1"></p>
+        </div>
+    </div>
     </section>
+    
 
     <!-- featured section ends -->
 
